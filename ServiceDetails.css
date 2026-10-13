@@ -1,0 +1,464 @@
+/* =========================================
+   KHADAMATX SERVICE DETAILS
+   LUXURY GOLD DESIGN
+========================================= */
+
+.service-details-page {
+  min-height: 100vh;
+  padding: 70px 7%;
+  background: #f7f8fa;
+  box-sizing: border-box;
+}
+
+.service-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 35px;
+
+  color: #9a7915;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.back-link:hover {
+  color: #d4af37;
+  transform: translateX(-3px);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.service-details-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee6cf;
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.details-icon {
+  width: 95px;
+  height: 95px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #fff8df,
+    #f3df91
+  );
+
+  border: 1px solid #dfc45b;
+
+  border-radius: 22px;
+
+  font-size: 45px;
+
+  box-shadow:
+    0 8px 20px rgba(212, 175, 55, 0.18);
+}
+
+.details-label {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #b08d19;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.service-details-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 40px;
+  font-weight: 800;
+
+  background: linear-gradient(
+    90deg,
+    #9a7200,
+    #d4af37,
+    #f0d56a
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-details-header p {
+  max-width: 750px;
+
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   MAIN GRID
+========================================= */
+
+.service-details-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    360px;
+
+  gap: 25px;
+
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.service-about {
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #eee6cf;
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.service-about h2 {
+  margin: 5px 0 15px;
+
+  color: #181818;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.service-about > p {
+  margin: 0 0 15px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   INFORMATION GRID
+========================================= */
+
+.service-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+.info-box {
+  padding: 17px;
+
+  background: #fcfbf7;
+
+  border: 1px solid #eee7d2;
+
+  border-radius: 13px;
+}
+
+.info-box span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #999;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.info-box strong {
+  display: block;
+
+  color: #444;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   ORDER CARD
+========================================= */
+
+.order-card {
+  position: sticky;
+  top: 25px;
+
+  height: fit-content;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfc45b;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(212, 175, 55, 0.14);
+}
+
+.order-card > span {
+  color: #999;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.order-card h2 {
+  margin: 7px 0 10px;
+
+  color: #b08d19;
+
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.order-card p {
+  margin: 0 0 25px;
+
+  color: #777;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   ORDER BUTTON
+========================================= */
+
+.order-now-btn {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  padding: 13px 18px;
+
+  border-radius: 11px;
+
+  background: linear-gradient(
+    135deg,
+    #a67c00,
+    #d4af37,
+    #f5d76e
+  );
+
+  border: 1px solid #d4af37;
+
+  color: #171717;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  box-shadow:
+    0 7px 20px rgba(212, 175, 55, 0.25);
+
+  transition: 0.25s ease;
+}
+
+.order-now-btn:hover {
+  color: #111;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 11px 28px rgba(212, 175, 55, 0.38);
+}
+
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+
+.contact-provider-btn {
+  width: 100%;
+
+  margin-top: 12px;
+
+  padding: 12px 18px;
+
+  border: 1px solid #d4af37;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #a67c00;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.contact-provider-btn:hover {
+  background: #fff9e7;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SERVICE NOT FOUND
+========================================= */
+
+.services-page .services-header span {
+  display: inline-block;
+
+  margin: 10px 0 25px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .service-details-page {
+    padding: 55px 5%;
+  }
+
+  .service-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-card {
+    position: static;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .service-details-page {
+    padding: 40px 18px;
+  }
+
+  .service-details-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 24px;
+  }
+
+  .details-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 34px;
+  }
+
+  .service-details-header h1 {
+    font-size: 30px;
+  }
+
+  .service-details-header p {
+    font-size: 14px;
+  }
+
+  .service-about {
+    padding: 23px;
+  }
+
+  .service-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-card {
+    padding: 24px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .service-details-header h1 {
+    font-size: 26px;
+  }
+
+  .details-icon {
+    width: 65px;
+    height: 65px;
+
+    font-size: 30px;
+  }
+
+  .service-about h2 {
+    font-size: 21px;
+  }
+
+  .order-card h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,208 @@
+.admin-services-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.admin-services-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.admin-label {
+  color: #ff7a00;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.admin-services-header h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.admin-services-header p {
+  margin: 0;
+  color: #999;
+}
+
+.back-admin-btn {
+  padding: 12px 18px;
+
+  border: 1px solid #333;
+  border-radius: 10px;
+
+  background: #151515;
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.back-admin-btn:hover {
+  border-color: #ff7a00;
+  color: #ff7a00;
+}
+
+/* TOOLBAR */
+
+.services-toolbar {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.services-toolbar input {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 14px 16px;
+
+  background: #151515;
+  color: #fff;
+
+  border: 1px solid #292929;
+  border-radius: 10px;
+
+  outline: none;
+}
+
+.services-toolbar input:focus {
+  border-color: #ff7a00;
+}
+
+.services-toolbar span {
+  color: #aaa;
+}
+
+/* TABLE */
+
+.services-table-wrapper {
+  max-width: 1200px;
+  margin: auto;
+
+  overflow-x: auto;
+
+  background: #151515;
+
+  border: 1px solid #282828;
+  border-radius: 16px;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.services-table th,
+.services-table td {
+  padding: 17px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #292929;
+}
+
+.services-table th {
+  color: #ff7a00;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.services-table td {
+  color: #ddd;
+}
+
+/* TYPE */
+
+.service-type {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.service-type.provider {
+  background: #16291c;
+  color: #6ee78a;
+}
+
+.service-type.default {
+  background: #242424;
+  color: #aaa;
+}
+
+/* DELETE */
+
+.delete-service-btn {
+  padding: 8px 13px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #3a1717;
+  color: #ff6b6b;
+
+  cursor: pointer;
+}
+
+.delete-service-btn:hover {
+  background: #ff4444;
+  color: #fff;
+}
+
+.protected-text {
+  color: #666;
+  font-size: 13px;
+}
+
+/* EMPTY */
+
+.no-services {
+  text-align: center !important;
+  padding: 40px !important;
+  color: #777 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .admin-services-page {
+    padding: 20px;
+  }
+
+  .admin-services-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-services-header h1 {
+    font-size: 30px;
+  }
+
+  .services-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+}

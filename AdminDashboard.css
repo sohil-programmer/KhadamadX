@@ -1,0 +1,211 @@
+.admin-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.admin-header {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-label {
+  color: #ff7a00;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.admin-header h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.admin-header p {
+  margin: 0;
+  color: #aaa;
+}
+
+.admin-home-btn {
+  padding: 12px 18px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  background: #151515;
+}
+
+.admin-home-btn:hover {
+  border-color: #ff7a00;
+  color: #ff7a00;
+}
+
+
+/* ================================
+   STATS
+================================ */
+
+.admin-stats {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.admin-card {
+  padding: 24px;
+  background: #151515;
+  border: 1px solid #282828;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-4px);
+  border-color: #ff7a00;
+}
+
+.admin-card span {
+  font-size: 25px;
+}
+
+.admin-card h3 {
+  margin: 15px 0 5px;
+  font-size: 30px;
+}
+
+.admin-card p {
+  margin: 0;
+  color: #999;
+}
+
+
+/* ================================
+   MANAGEMENT
+================================ */
+
+.admin-management {
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+.admin-management h2 {
+  margin-bottom: 20px;
+}
+
+.admin-actions {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.admin-action-card {
+  padding: 28px;
+  background: #151515;
+  border: 1px solid #282828;
+  border-radius: 16px;
+}
+
+.admin-action-card span {
+  font-size: 30px;
+}
+
+.admin-action-card h3 {
+  margin: 15px 0 8px;
+}
+
+.admin-action-card p {
+  color: #999;
+  min-height: 45px;
+}
+
+.admin-action-card button {
+  margin-top: 15px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7a00;
+  color: #000;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.admin-action-card button:hover {
+  background: #ff922b;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .admin-page {
+    padding: 20px;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-header h1 {
+    font-size: 30px;
+  }
+
+}
+
+.admin-reviews-stats {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.review-stat-card {
+  padding: 22px;
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.review-stat-card span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.review-stat-card h3 {
+  margin: 0;
+  color: #ff7a00;
+  font-size: 28px;
+}
+
+.review-stat-card p {
+  margin: 7px 0 0;
+  color: #999;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .admin-reviews-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-reviews-stats {
+    grid-template-columns: 1fr;
+  }
+}

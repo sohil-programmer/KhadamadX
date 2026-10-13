@@ -1,0 +1,493 @@
+.admin-orders-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* HEADER */
+
+.admin-orders-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.admin-label {
+  color: #ff7a00;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.admin-orders-header h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.admin-orders-header p {
+  margin: 0;
+  color: #999;
+}
+
+.back-admin-btn {
+  padding: 12px 18px;
+
+  border: 1px solid #333;
+  border-radius: 10px;
+
+  background: #151515;
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.back-admin-btn:hover {
+  border-color: #ff7a00;
+  color: #ff7a00;
+}
+
+/* TOOLBAR */
+
+.orders-toolbar {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.orders-toolbar input {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 14px 16px;
+
+  background: #151515;
+  color: #fff;
+
+  border: 1px solid #292929;
+  border-radius: 10px;
+
+  outline: none;
+}
+
+.orders-toolbar input:focus {
+  border-color: #ff7a00;
+}
+
+.orders-toolbar select {
+  padding: 14px 16px;
+
+  background: #151515;
+  color: #fff;
+
+  border: 1px solid #292929;
+  border-radius: 10px;
+
+  outline: none;
+}
+
+.orders-toolbar select:focus {
+  border-color: #ff7a00;
+}
+
+.orders-toolbar span {
+  margin-left: auto;
+  color: #aaa;
+}
+
+/* TABLE */
+
+.orders-table-wrapper {
+  max-width: 1200px;
+  margin: auto;
+
+  overflow-x: auto;
+
+  background: #151515;
+
+  border: 1px solid #282828;
+  border-radius: 16px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 16px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #292929;
+}
+
+.orders-table th {
+  color: #ff7a00;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.orders-table td {
+  color: #ddd;
+}
+
+/* CUSTOMER */
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.customer-info small {
+  color: #777;
+}
+
+/* STATUS */
+
+.status {
+  padding: 8px 10px;
+
+  border-radius: 7px;
+
+  background: #202020;
+  color: #fff;
+
+  border: 1px solid #333;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.status:focus {
+  border-color: #ff7a00;
+}
+
+.status.completed {
+  color: #6ee78a;
+  border-color: #285c36;
+}
+
+.status.pending {
+  color: #ffc266;
+  border-color: #5c4528;
+}
+
+.status.accepted {
+  color: #70b7ff;
+  border-color: #285078;
+}
+
+.status.progress {
+  color: #c084fc;
+  border-color: #59357d;
+}
+
+.status.cancelled {
+  color: #ff6b6b;
+  border-color: #713333;
+}
+
+/* DELETE */
+
+.delete-order-btn {
+  padding: 8px 13px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #3a1717;
+  color: #ff6b6b;
+
+  cursor: pointer;
+}
+
+.delete-order-btn:hover {
+  background: #ff4444;
+  color: #fff;
+}
+
+/* EMPTY */
+
+.no-orders {
+  text-align: center !important;
+
+  padding: 45px !important;
+
+  color: #777 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .admin-orders-page {
+    padding: 20px;
+  }
+
+  .admin-orders-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-orders-header h1 {
+    font-size: 30px;
+  }
+
+  .orders-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .orders-toolbar input {
+    max-width: none;
+  }
+
+  .orders-toolbar span {
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+
+/* ==========================================
+   PROJECT DELIVERY ACTIONS
+========================================== */
+
+.project-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 180px;
+}
+
+.project-approved,
+.project-rejected,
+.project-review,
+.project-not-delivered {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project-approved {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+.project-rejected {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.project-review {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+.project-not-delivered {
+  color: #64748b;
+  background: #f1f5f9;
+}
+
+/* ==========================================
+   PROJECT BUTTONS
+========================================== */
+
+.view-project-btn,
+.download-project-btn,
+.open-project-btn,
+.approve-project-btn,
+.reject-project-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.view-project-btn {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.download-project-btn {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.open-project-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.approve-project-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.reject-project-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.view-project-btn:hover,
+.download-project-btn:hover,
+.open-project-btn:hover,
+.approve-project-btn:hover,
+.reject-project-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* ==========================================
+   DELETE ORDER
+========================================== */
+
+.delete-order-btn {
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete-order-btn:hover {
+  background: #fecaca;
+}
+
+
+/* ==========================================
+   EDIT / UPLOAD PROJECT
+========================================== */
+
+.edit-project-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #292929;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-project-btn:hover {
+  background: #ff7a00;
+}
+
+/* CANCEL */
+
+.cancel-project-btn {
+  width: 100%;
+  margin-top: 7px;
+  padding: 8px 10px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: transparent;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-project-btn:hover {
+  border-color: #ff4444;
+  color: #ff6b6b;
+}
+
+
+
+.admin-revision-request {
+  margin: 12px 0;
+  padding: 14px;
+  min-width: 220px;
+  max-width: 320px;
+  color: #f5f5f5;
+  background: #211a14;
+  border: 1px solid #ff8a00;
+  border-radius: 10px;
+}
+
+.admin-revision-request h4 {
+  margin: 0 0 10px;
+  color: #ff9d2e;
+  font-size: 14px;
+}
+
+.admin-revision-request p {
+  margin: 0 0 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+}
+
+.admin-revision-request small {
+  display: block;
+  margin-bottom: 12px;
+  color: #c5c5c5;
+}
+
+.review-revision-btn {
+  padding: 8px 12px;
+  background: #ff8a00;
+  color: #171717;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.revision-reviewed {
+  color: #7ee787;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-order-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-completed-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
