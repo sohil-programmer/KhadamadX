@@ -1,0 +1,572 @@
+.provider-delivery-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(46, 204, 113, 0.06);
+  border: 1px solid rgba(46, 204, 113, 0.25);
+  border-radius: 14px;
+}
+
+.provider-delivery-info > span {
+  display: block;
+  margin-bottom: 6px;
+  color: #ff8a00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.provider-delivery-info h4 {
+  margin: 0 0 10px;
+  color: #2ecc71;
+}
+
+.provider-delivery-info p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.provider-delivery-info small {
+  display: block;
+  margin-top: 12px;
+  color: #777;
+}
+
+.delivery-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 14px;
+  background: #ff8a00;
+  color: #111;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.delivery-file {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #ff8a00;
+}
+
+
+/* ==========================================
+   CUSTOMER DELIVERED PROJECT
+========================================== */
+
+.customer-delivered-project {
+  margin-top: 25px;
+  padding: 25px;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 0.08),
+    rgba(16, 185, 129, 0.03)
+  );
+}
+
+.delivered-project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.delivered-project-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #16a34a;
+  margin-bottom: 7px;
+}
+
+.delivered-project-header h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.delivered-project-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.delivered-project-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.delivery-info-item {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.delivery-info-item span {
+  display: block;
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.delivery-info-item strong {
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.delivery-message-box {
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.delivery-message-box span,
+.rejection-reason span {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.delivery-message-box p,
+.rejection-reason p {
+  margin: 0;
+  line-height: 1.7;
+  color: #444;
+}
+
+.delivery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.download-project-btn,
+.open-project-btn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.download-project-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.open-project-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.download-project-btn:hover,
+.open-project-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* ==========================================
+   REJECTED PROJECT
+========================================== */
+
+.customer-project-rejected {
+  margin-top: 22px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.customer-project-rejected strong {
+  color: #dc2626;
+}
+
+.customer-project-rejected p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.rejection-reason {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================
+   PROJECT WAITING ADMIN REVIEW
+========================================== */
+
+.customer-project-reviewing {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 14px;
+  background: rgba(59, 130, 246, 0.07);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.customer-project-reviewing strong {
+  color: #2563eb;
+}
+
+.customer-project-reviewing p {
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .delivered-project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delivered-project-info {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-actions {
+    flex-direction: column;
+  }
+
+  .download-project-btn,
+  .open-project-btn {
+    width: 100%;
+  }
+
+}
+
+.deliver-project-card {
+  margin-top: 24px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.015)
+    );
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.28);
+  color: #fff;
+}
+
+.deliver-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.deliver-project-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #ff8a00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.deliver-project-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.deliver-project-header p {
+  margin: 8px 0 0;
+  color: #9da3ae;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+.deliver-project-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(255, 138, 0, 0.12);
+  border: 1px solid rgba(255, 138, 0, 0.25);
+  font-size: 25px;
+}
+
+.delivery-review-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 16px 18px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background: rgba(255, 138, 0, 0.08);
+  border: 1px solid rgba(255, 138, 0, 0.2);
+}
+
+.delivery-review-notice > span {
+  font-size: 21px;
+}
+
+.delivery-review-notice strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #ff9d2e;
+  font-size: 14px;
+}
+
+.delivery-review-notice p {
+  margin: 0;
+  color: #b8bec8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.deliver-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deliver-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.deliver-field label {
+  color: #f4f4f5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.deliver-field input,
+.deliver-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 13px;
+  outline: none;
+  background: #101114;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.deliver-field input:focus,
+.deliver-field textarea:focus {
+  border-color: #ff8a00;
+  box-shadow:
+    0 0 0 3px rgba(255, 138, 0, 0.08);
+}
+
+.deliver-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.deliver-field small {
+  color: #777d87;
+  font-size: 11px;
+}
+
+.file-upload-box {
+  position: relative;
+}
+
+.file-upload-box input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.file-upload-label {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 20px;
+  border: 1.5px dashed rgba(255, 138, 0, 0.35);
+  border-radius: 16px;
+  background: rgba(255, 138, 0, 0.035);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.file-upload-label:hover {
+  border-color: #ff8a00;
+  background: rgba(255, 138, 0, 0.07);
+}
+
+.upload-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 138, 0, 0.12);
+  color: #ff8a00;
+  font-size: 22px;
+}
+
+.file-upload-label > span:nth-child(2) {
+  color: #e8e9eb;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  border-radius: 13px;
+  background: #101114;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.selected-file > span {
+  font-size: 20px;
+}
+
+.selected-file div {
+  flex: 1;
+  min-width: 0;
+}
+
+.selected-file strong {
+  display: block;
+  overflow: hidden;
+  color: #eee;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selected-file small {
+  display: block;
+  margin-top: 3px;
+  color: #777d87;
+}
+
+.selected-file button {
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 70, 70, 0.25);
+  border-radius: 9px;
+  background: rgba(255, 70, 70, 0.08);
+  color: #ff7373;
+  cursor: pointer;
+}
+
+.deliver-submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(
+    135deg,
+    #ff9d00,
+    #ff6a00
+  );
+  color: #111;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow:
+    0 10px 25px rgba(255, 122, 0, 0.18);
+  transition: 0.25s ease;
+}
+
+.deliver-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 30px rgba(255, 122, 0, 0.28);
+}
+
+.deliver-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.delivery-spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-top-color: #111;
+  border-radius: 50%;
+  animation: deliverySpin 0.7s linear infinite;
+}
+
+@keyframes deliverySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .deliver-project-card {
+    padding: 20px;
+    border-radius: 17px;
+  }
+
+  .deliver-project-header h3 {
+    font-size: 20px;
+  }
+
+  .deliver-project-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .delivery-review-notice {
+    padding: 13px;
+  }
+
+  .selected-file {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .selected-file button {
+    width: 100%;
+  }
+}

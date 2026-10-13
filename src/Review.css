@@ -1,0 +1,224 @@
+/* ==========================================
+   KHADAMATX - REVIEW SYSTEM
+   Black + Orange Professional Design
+========================================== */
+
+.review-box {
+  margin-top: 24px;
+  padding: 28px;
+  background: #111111;
+  border: 1px solid rgba(255, 140, 0, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Review Header */
+.review-title span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #ff8c00;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.review-title h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.review-title p {
+  margin: 8px 0 0;
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   Rating Stars
+========================================== */
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 22px 0 10px;
+}
+
+.star {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(255, 140, 0, 0.25);
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #555555;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.star:hover {
+  color: #ff8c00;
+  border-color: #ff8c00;
+  transform: translateY(-2px);
+}
+
+.star.active {
+  color: #ff8c00;
+  background: rgba(255, 140, 0, 0.08);
+  border-color: #ff8c00;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.12);
+}
+
+/* Rating Text */
+.rating-text {
+  margin-bottom: 18px;
+  color: #ff8c00;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ==========================================
+   Review Form
+========================================== */
+
+.review-form {
+  margin-top: 10px;
+}
+
+.review-form-group {
+  position: relative;
+}
+
+.review-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.review-form-group textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+
+  background: #181818;
+  color: #ffffff;
+
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+
+  outline: none;
+  resize: vertical;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+
+  transition: all 0.2s ease;
+}
+
+.review-form-group textarea::placeholder {
+  color: #666666;
+}
+
+.review-form-group textarea:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.08);
+}
+
+/* Character Counter */
+.review-form-group small {
+  display: block;
+  margin-top: 6px;
+  text-align: right;
+  color: #777777;
+  font-size: 12px;
+}
+
+/* Submit Button */
+.review-submit-btn {
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================
+   Submitted Review
+========================================== */
+
+.review-submitted {
+  margin-top: 24px;
+  padding: 22px;
+  background: #151515;
+  border: 1px solid rgba(255, 140, 0, 0.2);
+  border-left: 4px solid #ff8c00;
+  border-radius: 14px;
+}
+
+.review-submitted-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.review-submitted-header strong {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.review-submitted-header span {
+  color: #777777;
+  font-size: 12px;
+}
+
+.review-stars {
+  margin: 12px 0;
+  color: #ff8c00;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.review-submitted p {
+  margin: 0;
+  color: #bbbbbb;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 600px) {
+  .review-box {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .review-title h3 {
+    font-size: 19px;
+  }
+
+  .rating-stars {
+    gap: 6px;
+  }
+
+  .star {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+  .review-submitted-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
